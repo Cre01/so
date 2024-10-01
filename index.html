@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec; /* Background color */
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #ffebee, #f8bbd0); /* Gradient matching the background */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 0 auto;
+            color: #333; /* Text color */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ff4081;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .message, .memories, .ending {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .intro {
+            font-size: 1.5em;
+            color: #ff80ab;
+        }
+
+        .ending p {
+            font-size: 1.5em;
+            color: #d81b60;
+            animation: fadeIn 3s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Floating hearts animation */
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: -100px;
+            font-size: 2em;
+            animation: floatUp 8s infinite ease-in-out;
+            color: pink;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-120vh);
+                opacity: 0;
+            }
+        }
+
+        .heart:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .heart:nth-child(2) {
+            left: 30%;
+            animation-delay: 2s;
+        }
+
+        .heart:nth-child(3) {
+            left: 50%;
+            animation-delay: 4s;
+        }
+
+        .heart:nth-child(4) {
+            left: 70%;
+            animation-delay: 6s;
+        }
+
+        /* Moving Hamster Animation */
+        .hamster {
+            position: fixed;
+            bottom: 10px; /* Height from the bottom */
+            right: 10px; /* Width from the right */
+            width: 100px; /* Size of the hamster */
+            animation: wiggle 0.5s infinite alternate; /* Wiggle animation */
+        }
+
+        @keyframes wiggle {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Hamster Image as a Meme Sticker */
+        .hamster-img {
+            width: 100%; /* Scale to fit the container */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Hola sol de mi vida 💖</h1>
+        <p class="intro">Hice esto solo para timi amor! 💕🥰</p>
+
+        <div class="message">
+            <p>Cada momento contigo es mágico ✨💫. Eres mi sol en un día nublado 🌞☁️. Te amo hasta la luna y más allá 🌙🚀.
+
+        <div class="memories">
+            <p>Espero desde el fondo de mi corazón que te sientas mejor porque te mereces el mundo, mi bebé.💞 </p>
+            <img src="SSS.jpg" alt="Our Memory">
+        </div>
+
+        <div class="ending">
+            <p>Te amo siempre y para siempre! 💘💞</p>
+        </div>
+    </div>
+
+    <!-- Floating Hearts Animation -->
+    <div class="hearts">
+        <div class="heart">💖</div>
+        <div class="heart">💞</div>
+        <div class="heart">💘</div>
+        <div class="heart">💕</div>
+    </div>
+
+    <!-- Animated Hamster Sticker -->
+    <div class="hamster">
+        <img class="hamster-img" src="https://media.tenor.com/khD7yS7FJjYAAAAC/sad-hamster-sad.gif" alt="Sad Hamster Meme">
+    </div>
+</body>
+</html>
